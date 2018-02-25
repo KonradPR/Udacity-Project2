@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-container {
+    width: 100%;
+}
+
+/*Header*/
+
+.header-container {
+    padding: 10px;
+    font-size: 65%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    width: 30%;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.main-header {
+    width: 70%;
+    text-align: right;
+}
+
+.separator {
+    margin-top: 5px;
+    width: 100%;
+}
+
+/*Flex Container*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Section About Me*/
+
+.about-me {
+    padding: 10px;
+    width: 100%;
+}
+
+.section-title {
+    color: #7d97ad;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+.about-me-section-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Section Featured Work*/
+
+.featured-work {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-work-section-title {
+    color: #7d97ad;
+}
+
+.featured-work-img {
+    width: 80%;
+    overflow: hidden;
+    display: block;
+    margin: 20px auto 5px auto;
+}
+
+.featured-work-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s;
+}
+
+.featured-work-link:hover {
+    font-size: 145%;
+}
+
+/*Media Queries and breakpoints*/
+
+@media screen and (min-width:500px) {
+    .main-header {
+        font-size: 1.2em;
+    }
+
+    .section-title {
+        font-size: 1.6em;
+    }
+    .featured-work-section-title {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .main-header {
+        font-size: 1.4em;
+    }
+
+    .section-title {
+        font-size: 1.9em;
+    }
+    .featured-work-section-title {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    .featured-work-content-container {
+        width: 33%;
+    }
+
+    .site-container {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+}
